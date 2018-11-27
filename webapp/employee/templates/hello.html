@@ -1,0 +1,20 @@
+{% extends 'header.html' %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+{% block content %}
+<body bgcolor="green">
+<center><h1><font color="white"> Hello World</font></h1></center>
+<h1>{{ d1.a }}</h1>
+{{ l1 }}
+{% for i in l1 %}
+<h3>{{ i }}</h3>
+{% endfor %}
+<h2>{{ name | upper }}</h2>
+<h2>{{ phone }}</h2>
+
+{% for k,v in d1.items %}
+<h2> {{ k }} : {{ v }} </h2>
+{% endfor %}
+{% endblock %}
